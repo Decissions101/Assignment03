@@ -1,0 +1,6 @@
+[project]
+name = "ing3513"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+authors = [{ name = "Øystein Nordberg", email = "oystein@midlaier.no" }]

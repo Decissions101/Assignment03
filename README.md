@@ -40,3 +40,27 @@ Before starting, ensure you have:
    - Click "Clone Repository" or press F1 and type `Git: Clone`
    - Enter the repository URL: `https://github.com/ing3513/course-materials.git`
    - Select a folder location and open the cloned repository
+
+7. **Setup Python Environment**
+   - Open a terminal in VS Code (Ctrl+`)
+   - Run the setup script: `./scripts/setupPythonEnvironment.sh`
+   - This will install uv, Python 3.13, and all project dependencies
+   - If this is your first run, restart your terminal or run: `source ~/.bashrc`
+
+## About the Python Environment
+
+This course uses [uv](https://docs.astral.sh/uv/), a modern Python package and project manager. uv is significantly faster than pip and provides better dependency resolution.
+
+### Key Features
+
+- Automatic Python version management
+- Fast dependency resolution and installation
+- Reproducible environments via lockfiles
+- All-in-one tool replacing pip, venv, and virtualenv
+
+### Common Commands
+
+- `uv run <command>` - Run a command in the project's virtual environment
+- `uv add <package>` - Add a new dependency
+- `uv sync --locked` - Sync dependencies from lockfile (use `--locked` to ensure exact versions match)
+- `uv python install` - Install Python versions
