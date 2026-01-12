@@ -12,5 +12,6 @@
   "notebook.formatOnSave.enabled": true,
   "notebook.codeActionsOnSave": {
     "source.fixAll": "explicit"
-  }
+  },
+  "remote.autoForwardPorts": false,
 }
