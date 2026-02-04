@@ -99,3 +99,19 @@ If you need to run formatting or linting manually:
 - `uv run ruff format .` - Format all Python files
 - `uv run ruff check .` - Check for linting issues
 - `uv run ruff check --fix .` - Auto-fix linting issues where possible
+
+## Exporting Notebooks to HTML
+
+To export a Jupyter notebook to HTML for submission or sharing:
+
+1. Open the notebook in VS Code
+2. Click the `...` (More Actions) button in the notebook toolbar
+3. Select **Export** from the dropdown menu
+4. Choose **HTML** as the export format
+5. Select a location to save the file
+
+This uses [nbconvert](https://nbconvert.readthedocs.io/) under the hood to convert the notebook. If you need PDF export, you can use your browser's "Print to PDF" feature on the exported HTML file.
+
+### PDF Export
+
+Exporting directly to PDF from VS Code requires system-level installation of [Pandoc](https://pandoc.org/) and a LaTeX distribution. For most use cases, exporting to HTML and using your browser's "Print to PDF" is simpler and produces good results.
