@@ -102,7 +102,7 @@ If you need to run formatting or linting manually:
 
 ## Exporting Notebooks to HTML
 
-To export a Jupyter notebook to HTML for submission or sharing:
+### Using VS Code (GUI)
 
 1. Open the notebook in VS Code
 2. Click the `...` (More Actions) button in the notebook toolbar
@@ -110,7 +110,19 @@ To export a Jupyter notebook to HTML for submission or sharing:
 4. Choose **HTML** as the export format
 5. Select a location to save the file
 
-This uses [nbconvert](https://nbconvert.readthedocs.io/) under the hood to convert the notebook. If you need PDF export, you can use your browser's "Print to PDF" feature on the exported HTML file.
+### Using the Command Line
+
+You can also export notebooks programmatically using [nbconvert](https://nbconvert.readthedocs.io/):
+
+```bash
+# Export a single notebook to HTML
+uv run jupyter nbconvert --to html path/to/notebook.ipynb
+
+# Export to a specific output directory
+uv run jupyter nbconvert --to html --output-dir=./output path/to/notebook.ipynb
+```
+
+The exported HTML file will be created in the same directory as the notebook (or the specified output directory).
 
 ### PDF Export
 
