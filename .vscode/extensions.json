@@ -1,9 +1,9 @@
 {
   "recommendations": [
     "charliermarsh.ruff",
+    "esbenp.prettier-vscode",
     "ms-vscode-remote.remote-wsl",
     "ms-toolsai.jupyter",
     "ms-python.python",
-    "prettier.prettier-vscode"
   ]
 }
