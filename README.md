@@ -100,7 +100,7 @@ If you need to run formatting or linting manually:
 - `uv run ruff check .` - Check for linting issues
 - `uv run ruff check --fix .` - Auto-fix linting issues where possible
 
-## Exporting Notebooks to HTML
+## Exporting Notebooks to HTML and PDF
 
 ### Using VS Code (GUI)
 
